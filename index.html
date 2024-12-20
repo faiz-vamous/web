@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS Pemrograman Web 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header img {
+            width: 100%;
+            height: auto;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #444;
+            text-align: center;
+        }
+
+        h3 {
+            margin-top: 0;
+            color: #666;
+        }
+
+        form table {
+            width: 100%;
+        }
+
+        form table td {
+            padding: 10px;
+        }
+
+        form input[type="text"],
+        form textarea {
+            width: calc(100% - 20px);
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #575757;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            form table td {
+                display: block;
+                width: 100%;
+            }
+
+            form input[type="submit"] {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/WhatsApp Image 2024-10-27 at 09.39.22.jpeg.jpg" alt="Header Image">
+    </header>
+    <nav>
+        <a href="utshome.html">Home</a>
+        <a href="utsaboutus.html">About us</a>
+        <a href="utspendaftaran.html">Pendaftaran</a>
+        <a href="utscontactus.html">Contact us</a>
+    </nav>
+
+    <section>
+        <h1>Selamat datang di website saya</h1>
+        <p>Silahkan klik menu About us untuk mendapatkan informasi tentang apa itu Artificial Intelligence (AI).</p>
+    </section>
+
+    <section>
+        <h3>Silahkan isi data diri anda terlebih dahulu</h3>
+        <form action="#">
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td><input type="text" name="nama" required></td>
+                </tr>
+                <tr>
+                    <td>Nama Panggilan</td>
+                    <td><input type="text" name="nama_panggilan" required></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>
+                        <input type="radio" name="jk" value="Laki-laki" required> Laki-laki
+                        <input type="radio" name="jk" value="Perempuan"> Perempuan
+                    </td>
+                </tr>
+                <tr>
+                    <td>Silahkan isi tujuan anda</td>
+                    <td>
+                        <textarea name="tujuan" id="tujuan" cols="30" rows="5" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="KIRIM"></td>
+                </tr>
+            </table>
+        </form>
+    </section>
+
+    <section>
+        <p>Silahkan hubungi kontak di bawah ini jika ada yang ingin ditanyakan:</p>
+        <p>Nomor Telepon/WhatsApp: 085779233704</p>
+        <p>Instagram: <a href="https://www.instagram.com/faizrmdniii" target="_blank">Nur Faiz Romadhani</a></p>
+    </section>
+
+    <footer>
+        &copy; 2024 - Website UTS Pemrograman Web 1
+    </footer>
+</body>
+</html>
